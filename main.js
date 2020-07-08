@@ -37,9 +37,25 @@ const thor = new Vingador(
   ["Deus do Trovão", "Super força", "Vôo", "Longevidade"],
   true,
   true,
+  false,
   false
 );
 
-document.getElementById("lutar").onclick = function () {
+const ironman = new Vingador(
+  "Iron Man",
+  "1.80",
+  "85kg",
+  ["Inteligência", "Gerador de Energia", "Vôo", "Dinheiro"],
+  true,
+  true,
+  false,
+  false
+);
+
+document.getElementById("lutart").onclick = function () {
   thor.lutar();
+};
+
+document.getElementById("lutari").onclick = function () {
+  ironman.lutar();
 };
